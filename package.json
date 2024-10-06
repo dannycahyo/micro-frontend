@@ -1,0 +1,20 @@
+{
+  "name": "micro-frontend",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "pnpm --parallel --filter \"./**\" build",
+    "serve": "pnpm --parallel --filter \"./**\" preview",
+    "build:remotes": "pnpm --parallel --filter \"./react-remote\" build",
+    "serve:remotes": "pnpm --parallel --filter \"./react-remote\" serve",
+    "build:hosts": "pnpm --parallel --filter \"./react-host\" build",
+    "serve:hosts": "pnpm --parallel --filter \"./react-host\" serve",
+    "dev:hosts": "pnpm --filter \"./react-host\" dev",
+    "dev:remotes": "pnpm --filter \"./react-remote\" dev",
+    "stop": "kill-port --port 5000,5001"
+  },
+  "devDependencies": {
+    "kill-port": "^2.0.1",
+    "@originjs/vite-plugin-federation": "^1.2.3"
+  }
+}
