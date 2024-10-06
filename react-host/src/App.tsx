@@ -1,6 +1,7 @@
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import React from "react";
+import "./App.css";
 const Button = React.lazy(() => import("remoteApp/Button"));
 
 function App() {
