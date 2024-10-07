@@ -1,4 +1,10 @@
 declare module "remoteApp/Button" {
-  const component: React.ComponentType;
-  export default component;
+  import React from "react";
+
+  interface ButtonProps {
+    defaultCount: number;
+  }
+
+  const Button: React.ComponentType<ButtonProps>;
+  export default Button;
 }

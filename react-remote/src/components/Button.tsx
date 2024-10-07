@@ -2,8 +2,12 @@ import "./Button.css";
 
 import { useState } from "react";
 
-export const Button = () => {
-  const [state, setState] = useState(0);
+type ButtonProps = {
+  defaultCount?: number;
+};
+
+export const Button = (props: ButtonProps) => {
+  const [state, setState] = useState(props.defaultCount || 0);
   return (
     <div>
       <button

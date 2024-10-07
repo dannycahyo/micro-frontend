@@ -10,8 +10,9 @@ export default defineConfig({
       name: "app",
       remotes: {
         remoteApp: "http://localhost:3001/assets/remoteEntry.js",
+        remoteSimple: "http://localhost:3002/assets/remoteEntry.js",
       },
-      shared: ["react", "react-dom"],
+      shared: ["react", "react-dom", "vue"],
     }),
   ],
   build: {
