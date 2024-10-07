@@ -4,3 +4,24 @@
   padding: 2rem;
   text-align: center;
 }
+
+h3 {
+  color: black;
+}
+
+.remote-box {
+  border: 2px solid;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+}
+
+.react-remote {
+  border-color: #61dafb;
+  background-color: #e3f2fd;
+}
+
+.vue-remote {
+  border-color: #42b883;
+  background-color: #e6f7f1;
+}
